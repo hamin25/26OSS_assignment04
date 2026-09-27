@@ -4,81 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login & User Information</title>
 </head>
 
-
 <body>
+
     <form>
+
         <h1>로그인</h1>
 
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+        </div>
 
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username"> <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email"> <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"><br>
-
-
-        <label> <input type="checkbox" name="remember">Remember me </label>
-
+        <label>
+            <input type="checkbox" name="remember">
+            Remember me
+        </label>
 
         <h1>회원 정보</h1>
 
-        <label for="name">이름</label>
-        <input type="text" id="name" name="name"> <br>
+        <div>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="birth">생년월일</label>
+            <input type="date" id="birth" name="birth">
+        </div>
+
+        <div>
+            <label for="grade">학년</label>
+            <select id="grade" name="grade">
+                <option value="">선택하세요</option>
+                <option value="1">1학년</option>
+                <option value="2">2학년</option>
+                <option value="3">3학년</option>
+                <option value="4">4학년</option>
+            </select>
+        </div>
+
+
 
         <p>성별</p>
+
         <label>
-            <input type="radio" name="gender" value="male">남성
+            <input type="radio" name="gender" value="male">
+            남성
         </label>
 
         <label>
-            <input type="radio" name="gender" value="female">여성
-        </label> <br>
+            <input type="radio" name="gender" value="female">
+            여성
+        </label>
 
-        <label for="birth">생년월일</label>
-        <input type="date" id="birth" name="birth"><br>
-
-        <label for="grade">학년</label>
-        <select id="grade" name="grade">
-            <option value="">선택하세요</option>
-            <option value="1">1학년</option>
-            <option value="2">2학년</option>
-            <option value="3">3학년</option>
-            <option value="4">4학년</option>
-        </select>
 
         <p>관심 분야</p>
+
         <label>
             <input type="checkbox" name="interest" value="photo">
             사진
         </label>
+
         <label>
             <input type="checkbox" name="interest" value="music">
             음악
         </label>
+
         <label>
             <input type="checkbox" name="interest" value="movie">
             영화
-        </label><br>
+        </label>
 
 
-        <label for="intro">자기소개</label><br>
-        <textarea id="intro" name="intro" rows="5"></textarea><br>
+        <div>
+            <label for="intro">자기소개</label><br>
+            <textarea id="intro" name="intro" rows="5"></textarea>
+        </div>
 
-        <label for="color">좋아하는 색</label><br>
-        <input type="color" id="color" name="color"><br>
+
+        <div>
+            <label for="color">좋아하는 색</label>
+            <input type="color" id="color" name="color">
+        </div><br>
 
         <button type="submit">가입하기</button>
-        <button type="reset">초기화</button><br>
+        <button type="reset">초기화</button> <br>
 
     </form>
 
 </body>
 
+<!--
+    Form Clone Coding 참고 사이트 https://getbootstrap.com/docs/5.3/examples/checkout/
+-->
 
 </html>

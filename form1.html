@@ -7,58 +7,78 @@
     <title>Document</title>
 </head>
 
+
 <body>
     <form>
-        <!--폼1 - 텍스트-->
-        <a>name: </a><br>
-        <input type="text" id="fname" name="fname"> <br> <br>
-
-        <!--폼2 - 라디오-->
-        <input type="radio" value="Female"> Female<br>
-        <input type="radio" value="Male"> Male<br> <br>
+        <h1>로그인</h1>
 
 
-        <!--폼3 체크박스-->
-        <input type="checkbox" value="yeolsong"> apple <br>
-        <input type="checkbox" value="Oragne"> orange <br>
-        <input type="checkbox" value="Banana"> banana <br> <br>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"> <br>
 
-        <!--폼4 date-->
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"> <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"> <br>
 
-        <!--폼5 select -->
-        <select id="cars" name="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-        </select> <br><br>
-
-        <!--폼6 textarea-->
-        <textarea name="message" rows="10" cols="30">The cat was playing in the garden.
-        </textarea> <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
 
 
-        <!--폼7 password-->
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="pwd">
-        <!--폼8 제출-->
-        <input type="submit" value="Submit"><br>
-
-        <!--폼8 color-->
-        <label for="favcolor">Select your favorite color:</label>
-        <input type="color" id="favcolor" name="favcolor"> <br>
+        <label> <input type="checkbox" name="remember">Remember me </label>
 
 
-        <!--폼9 image-->
-        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> <br>
+        <h1>회원 정보</h1>
 
-        <!--폼10 range-->
-        <label for="vol">Volume (between 0 and 50):</label>
-        <input type="range" id="vol" name="vol" min="0" max="50">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name"> <br>
+
+        <p>성별</p>
+        <label>
+            <input type="radio" name="gender" value="male">남성
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="female">여성
+        </label> <br>
+
+        <label for="birth">생년월일</label>
+        <input type="date" id="birth" name="birth"><br>
+
+        <label for="grade">학년</label>
+        <select id="grade" name="grade">
+            <option value="">선택하세요</option>
+            <option value="1">1학년</option>
+            <option value="2">2학년</option>
+            <option value="3">3학년</option>
+            <option value="4">4학년</option>
+        </select>
+
+        <p>관심 분야</p>
+        <label>
+            <input type="checkbox" name="interest" value="photo">
+            사진
+        </label>
+        <label>
+            <input type="checkbox" name="interest" value="music">
+            음악
+        </label>
+        <label>
+            <input type="checkbox" name="interest" value="movie">
+            영화
+        </label><br>
+
+
+        <label for="intro">자기소개</label><br>
+        <textarea id="intro" name="intro" rows="5"></textarea><br>
+
+        <label for="color">좋아하는 색</label><br>
+        <input type="color" id="color" name="color"><br>
+
+        <button type="submit">가입하기</button>
+        <button type="reset">초기화</button><br>
 
     </form>
+
 </body>
+
 
 </html>
